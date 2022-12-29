@@ -26,8 +26,8 @@ function App() {
         this.view = g("view");
         this.go("index");
         window.onpopstate = function(e) {
-            state.urls.pop();
-            var last = state.urls[state.urls.length-1];
+            this.state.urls.pop();
+            var last = this.state.urls[state.urls.length-1];
             if(last){
                 this.goNoHistory(last);
             }else{
