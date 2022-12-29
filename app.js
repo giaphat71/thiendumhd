@@ -26,13 +26,13 @@ function App() {
         this.view = g("view");
         this.go("index");
         window.onpopstate = function(e) {
-            this.state.urls.pop();
-            var last = this.state.urls[this.state.urls.length-1];
-            if(last){
-                this.goNoHistory(last);
-            }else{
-                this.goNoHistory("index");
-            }
+            // this.state.urls.pop();
+            // var last = this.state.urls[this.state.urls.length-1];
+            // if(last){
+            //     this.goNoHistory(last);
+            // }else{
+            //     this.goNoHistory("index");
+            // }
         }.bind(this);
     }
     this.name = 'App';
