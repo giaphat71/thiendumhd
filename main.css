@@ -62,19 +62,19 @@ h1{
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     padding: 20px;
     background: /* gradient around 9cc0e5 */ linear-gradient(135deg, #9cc0e5 0%, #9cc0e5 100%);
-    min-height: 100vh;
+    min-height: 100%;
 }
 /* Max page width: 640px*/
 @media screen and (max-width: 640px){
     .content{
         margin: 0;
-        width: 100vw;
+        width: 100%;
     }
 }
 @media screen and (max-width: 400px){
     .content{
         margin: 0;
-        width: 100vw;
+        width: 100%;
     }
     .grid{
         grid-template-columns: repeat(1, 1fr);
