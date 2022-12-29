@@ -30,6 +30,8 @@ function App() {
             var last = state.urls[state.urls.length-1];
             if(last){
                 this.goNoHistory(last);
+            }else{
+                this.goNoHistory("index");
             }
         }.bind(this);
     }
