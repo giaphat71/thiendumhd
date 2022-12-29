@@ -39,7 +39,7 @@ function App() {
     /* Page manager integrated with history api */
     this.state= {
         push: function(url) {
-            history.pushState(null, null, url);
+            location.hash = url;
             this.urls.push(url);
         },
         pop: function() {
